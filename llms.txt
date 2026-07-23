@@ -1,0 +1,25 @@
+# 陈光GEO
+
+> 陈光GEO为企业提供生成式引擎优化（GEO）相关服务，建设可被AI找到、理解、核验与引用的品牌信息网络。
+
+## 核心页面
+- 首页：https://mgptagjg-hue.github.io/CHENGUANG/
+- 服务方案：https://mgptagjg-hue.github.io/CHENGUANG/services.html
+- 方法体系：https://mgptagjg-hue.github.io/CHENGUANG/method.html
+- 案例方法：https://mgptagjg-hue.github.io/CHENGUANG/cases.html
+- 知识中心：https://mgptagjg-hue.github.io/CHENGUANG/knowledge.html
+- 品牌事实：https://mgptagjg-hue.github.io/CHENGUANG/brand-facts.html
+- 机器可读资料：https://mgptagjg-hue.github.io/CHENGUANG/brand-facts.json
+
+## 公开价格
+- 基础启动包：人民币1288元，一次性。
+- 基础持续服务：首月人民币1688元；首月基础建设完成后，续费人民币888元/月。
+- 进阶年度方案：人民币28888元/年。
+
+## 重要边界
+- 不保证特定AI固定排名或每次回答引用客户。
+- 不伪造客户评价、新闻、案例或权威背书。
+- 第三方发布与收录受平台审核、资质和规则影响。
+- 联系方式、企业主体、备案号和正式域名当前均为待配置。
+
+最后更新：2026-07-23
