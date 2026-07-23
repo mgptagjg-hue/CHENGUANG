@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mgptagjg-hue.github.io/CHENGUANG/sitemap.xml
+Sitemap: https://8.218.105.222/sitemap.xml

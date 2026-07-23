@@ -1,0 +1,7 @@
+node_modules/
+chenguanggeo-deploy.tar.gz
+playwright-report/
+test-results/
+*.xlsx
+*.xls
+*.log

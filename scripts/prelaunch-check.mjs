@@ -42,7 +42,7 @@ for (const file of htmlFiles) {
 }
 
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
-for (const match of sitemap.matchAll(/<loc>https:\/\/mgptagjg-hue\.github\.io\/CHENGUANG\/?([^<]*)<\/loc>/g)) {
+for (const match of sitemap.matchAll(/<loc>https:\/\/8\.218\.105\.222\/?([^<]*)<\/loc>/g)) {
   const path = match[1] || 'index.html';
   if (!(await exists(join(root, path)))) report('sitemap.xml', `页面不存在：${path}`);
 }
