@@ -1,7 +1,7 @@
 window.SITE_CONFIG = Object.freeze({
   brandName: '陈光GEO',
   brandNameEn: 'CHENGUANG GEO',
-  siteUrl: 'https://mgptagjg-hue.github.io/CHENGUANG/',
+  siteUrl: 'https://8.218.105.222/',
   contact: Object.freeze({
     phone: '18006727611',
     wechat: 'gold-king-there',

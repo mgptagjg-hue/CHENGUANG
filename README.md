@@ -78,6 +78,10 @@ npm run check
 
 本分支通过 Pull Request 合并到 `main` 后才触发正式部署。代码中不包含密钥。
 
+## 香港服务器部署
+
+Nginx 服务器的打包、备份、上传、更新、证书续期检查与回滚流程见 `DEPLOY-SERVER.md`。入口脚本为 `scripts/deploy-to-server.ps1`，服务器端更新脚本为 `scripts/server-update.sh`。SSH 用户名、端口和私钥路径只通过命令参数提供，不写入仓库。
+
 ## Cloudflare Pages / Vercel
 
 - Framework preset：None / Other
@@ -88,7 +92,7 @@ npm run check
 
 1. 在托管平台添加域名并按提示配置 DNS。
 2. GitHub Pages 场景在仓库根目录创建 `CNAME`，内容只写已验证域名；当前没有正式域名，所以不创建。
-3. 全局替换 GitHub Pages 基准地址 `https://mgptagjg-hue.github.io/CHENGUANG/`，重点更新所有页面 canonical、Open Graph URL/图片、JSON-LD、`robots.txt`、`sitemap.xml`、`llms.txt`、`brand-facts.json` 和 `site-config.js`。
+3. 全局替换当前正式站点基准地址 `https://8.218.105.222/`，重点更新所有页面 canonical、Open Graph URL/图片、JSON-LD、`robots.txt`、`sitemap.xml`、`llms.txt`、`brand-facts.json` 和 `site-config.js`。
 4. 重新运行 `npm run check`。
 
 ## 更新 sitemap 与 canonical

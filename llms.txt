@@ -3,13 +3,13 @@
 > 陈光GEO为企业提供生成式引擎优化（GEO）相关服务，建设可被AI找到、理解、核验与引用的品牌信息网络。
 
 ## 核心页面
-- 首页：https://mgptagjg-hue.github.io/CHENGUANG/
-- 服务方案：https://mgptagjg-hue.github.io/CHENGUANG/services.html
-- 方法体系：https://mgptagjg-hue.github.io/CHENGUANG/method.html
-- 案例方法：https://mgptagjg-hue.github.io/CHENGUANG/cases.html
-- 知识中心：https://mgptagjg-hue.github.io/CHENGUANG/knowledge.html
-- 品牌事实：https://mgptagjg-hue.github.io/CHENGUANG/brand-facts.html
-- 机器可读资料：https://mgptagjg-hue.github.io/CHENGUANG/brand-facts.json
+- 首页：https://8.218.105.222/
+- 服务方案：https://8.218.105.222/services.html
+- 方法体系：https://8.218.105.222/method.html
+- 案例方法：https://8.218.105.222/cases.html
+- 知识中心：https://8.218.105.222/knowledge.html
+- 品牌事实：https://8.218.105.222/brand-facts.html
+- 机器可读资料：https://8.218.105.222/brand-facts.json
 
 ## 公开价格
 - 基础启动包：人民币1288元，一次性。
@@ -20,7 +20,7 @@
 - 联系电话：18006727611
 - 联系微信：gold-king-there（个人微信）
 - 联系邮箱：1062269723@qq.com
-- 微信二维码：https://mgptagjg-hue.github.io/CHENGUANG/assets/images/wechat-qr.png
+- 微信二维码：https://8.218.105.222/assets/images/wechat-qr.png
 
 ## 重要边界
 - 不保证特定AI固定排名或每次回答引用客户。
