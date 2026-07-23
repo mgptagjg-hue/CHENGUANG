@@ -1,0 +1,32 @@
+{
+  "brand_name": "陈光GEO",
+  "brand_name_en": "CHENGUANG GEO",
+  "website": "https://mgptagjg-hue.github.io/CHENGUANG/",
+  "formal_domain_status": "待配置",
+  "description": "为企业建设可被AI找到、理解、核验与引用的品牌信息网络。",
+  "contact": {"phone": "待配置", "wechat": "待配置", "email": "待配置", "qr_image": "待配置"},
+  "legal": {"entity": "待配置", "icp": "待配置"},
+  "plans": [
+    {"name": "基础启动包", "price_cny": 1288, "billing": "一次性", "positioning": "一次性完成品牌线上基础搭建"},
+    {"name": "基础持续服务", "first_month_price_cny": 1688, "following_month_price_cny": 888, "billing": "首月建设完成后按月续费", "positioning": "持续更新、复测和优化"},
+    {"name": "进阶年度方案", "price_cny": 28888, "billing": "年度", "positioning": "系统建设权威来源、行业平台和长期品牌资产"}
+  ],
+  "service_boundaries": [
+    "不保证特定AI固定排名",
+    "不保证每次回答都引用客户",
+    "不制作虚假评价",
+    "不伪造新闻、案例或权威背书",
+    "第三方平台发布结果受平台审核规则影响"
+  ],
+  "logo": {
+    "primary_svg": "assets/logo.svg",
+    "white_svg": "assets/logo-white.svg",
+    "mark_svg": "assets/logo-mark.svg",
+    "mono_dark_svg": "assets/logo-mono-dark.svg",
+    "mono_white_svg": "assets/logo-mono-white.svg",
+    "primary_png": "assets/logo.png",
+    "white_png": "assets/logo-white.png",
+    "mark_png": "assets/logo-mark.png"
+  },
+  "last_updated": "2026-07-23"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "chenguang-geo-static",
+  "private": true,
+  "version": "1.0.0",
+  "description": "陈光GEO纯静态官网",
+  "scripts": {"check": "node scripts/prelaunch-check.mjs"},
+  "engines": {"node": ">=18"}
+}
