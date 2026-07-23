@@ -20,7 +20,15 @@ for (const file of htmlFiles) {
   if (/javascript:void\s*\(0\)/i.test(html)) report(file, '存在 javascript:void(0)');
   if (/(?:localhost|file:\/\/\/|[CD]:\\|\/mnt\/data\/)/i.test(html)) report(file, '存在本地或磁盘路径');
   if (/chenguanggeo\.cn/i.test(html)) report(file, '存在未确认的旧正式域名');
-  if (/\b1[3-9]\d{9}\b/.test(html)) report(file, '存在疑似占位手机号');
+  for (const phone of html.matchAll(/\b1[3-9]\d{9}\b/g)) {
+    if (phone[0] !== '18006727611') report(file, `存在非官方或疑似占位手机号：${phone[0]}`);
+  }
+  for (const href of html.matchAll(/href=["']tel:([^"']+)["']/gi)) {
+    if (href[1] !== '18006727611') report(file, `电话链接不正确：tel:${href[1]}`);
+  }
+  for (const href of html.matchAll(/href=["']mailto:([^"']+)["']/gi)) {
+    if (href[1] !== '1062269723@qq.com') report(file, `邮箱链接不正确：mailto:${href[1]}`);
+  }
 
   for (const match of html.matchAll(/<img\b([^>]*)>/gi)) {
     if (!/\balt=["'][^"']*["']/i.test(match[1])) report(file, `图片缺少 alt：${match[0].slice(0, 80)}`);
@@ -38,6 +46,8 @@ for (const match of sitemap.matchAll(/<loc>https:\/\/mgptagjg-hue\.github\.io\/C
   const path = match[1] || 'index.html';
   if (!(await exists(join(root, path)))) report('sitemap.xml', `页面不存在：${path}`);
 }
+
+if (!(await exists(join(root, 'assets/images/wechat-qr.png')))) report('assets/images/wechat-qr.png', '正式微信二维码不存在');
 
 if (errors.length) {
   console.error(`上线检查失败（${errors.length}项）：\n- ${errors.join('\n- ')}`);

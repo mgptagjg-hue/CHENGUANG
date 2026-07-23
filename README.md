@@ -70,7 +70,7 @@ npm run check
 
 ## 替换二维码
 
-将正式二维码放入 `assets/images/`，建议使用压缩后的 WebP 或 PNG；更新 `site-config.js` 的 `contact.qrImage` 后，再在联系方式区域增加带有明确 `alt`、`width` 和 `height` 的图片。当前没有正式二维码，因此页面不展示假二维码。
+当前个人微信二维码为 `assets/images/wechat-qr.png`，使用无损压缩PNG并保留完整矩阵与白色安全区。未来替换时必须同步更新 `site-config.js` 的 `contact.qrImage`，并保留明确的 `alt`、真实 `width` 和 `height`，禁止转成有损JPEG/WebP或覆盖Logo。
 
 ## GitHub Pages部署
 
