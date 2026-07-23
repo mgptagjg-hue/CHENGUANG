@@ -32,19 +32,22 @@
     });
   });
 
-  document.querySelectorAll('[data-copy-contact]').forEach((button) => {
+  document.querySelectorAll('[data-copy-wechat]').forEach((button) => {
     button.addEventListener('click', async () => {
-      const lines = [
-        `${config.brandName || '陈光GEO'}联系方式`,
-        `电话：${config.contact?.phone || '待配置'}`,
-        `微信：${config.contact?.wechat || '待配置'}`,
-        `邮箱：${config.contact?.email || '待配置'}`
-      ];
       try {
-        await navigator.clipboard.writeText(lines.join('\n'));
-        button.textContent = '联系信息状态已复制';
+        await navigator.clipboard.writeText(config.contact.wechat);
+        button.textContent = '微信号已复制';
       } catch (error) {
-        button.textContent = '请手动复制页面信息';
+        const field = document.createElement('textarea');
+        field.value = config.contact.wechat;
+        field.setAttribute('readonly', '');
+        field.style.position = 'fixed';
+        field.style.opacity = '0';
+        document.body.appendChild(field);
+        field.select();
+        const copied = document.execCommand('copy');
+        field.remove();
+        button.textContent = copied ? '微信号已复制' : '请手动复制微信号';
       }
     });
   });
